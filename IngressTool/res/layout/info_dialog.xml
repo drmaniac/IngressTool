@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/ingress_tool_info_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/ingress_tool_info_msg" />
+
+    <ImageView
+        android:id="@+id/donate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ingress_tool_info_msg"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="ingress tool donation"
+        android:src="@drawable/ic_paypal_donate" />
+
+    <Button
+        android:id="@+id/info_dlg_send_debug_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donate"
+        android:layout_centerHorizontal="true"
+        android:text="@string/info_dlg_send_debug_msg" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="crash_toast_text">Ooooops ! Ich bin abgestürst, aber ein report kann an mein Entwicker gesendet werden! Das kann helfen den um den Fehler zu beheben</string>
+    
+    <string name="crash_dialog_title">IngressTool ist abgestürzt</string>
+    <string name="crash_dialog_text">Ein unerwarteter Fehler ist aufgetreten und hat IngressTool gestopt.
+    Bitte hilf uns das Problem zu beheben uns sende uns die Fehlermeldung.
+    Alles was du zu tun hast ist auf OK zu klicken.</string>
+    <string name="crash_dialog_comment_prompt">Vielleicht möchtest du uns noch ein Kommentar zu dem Problem zukommen lassen:</string>
+    <string name="crash_dialog_ok_toast">Danke !</string>
+
+</resources>

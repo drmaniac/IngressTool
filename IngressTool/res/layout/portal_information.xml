@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/portal_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:contentDescription="@string/portal_detail_image_desc"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/portal_detail_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/portal_detail_title"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/portal_detail_level_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout4"
+        android:contentDescription="@string/portal_detail_image_desc"
+        android:src="@drawable/e_portal_l0" />
+
+    <TextView
+        android:id="@+id/portal_capturing_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/portal_detail_level_img"
+        android:layout_toRightOf="@+id/portal_detail_level_img"
+        android:text="@string/capturing_player" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/portal_detail_level_img" >
+
+        <TextView
+            android:id="@+id/portal_mod_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/portal_shield"
+            android:gravity="center_horizontal"
+            android:text="@string/portal_detail_mod_common" />
+
+        <TextView
+            android:id="@+id/portal_mod_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/portal_shield"
+            android:gravity="center_horizontal"
+            android:text="@string/portal_detail_mod_common" />
+
+        <TextView
+            android:id="@+id/portal_mod_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/portal_shield"
+            android:gravity="center_horizontal"
+            android:text="@string/portal_detail_mod_rare" />
+
+        <TextView
+            android:id="@+id/portal_mod_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/portal_shield"
+            android:gravity="center_horizontal"
+            android:text="@string/portal_detail_mod_very_rare" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1" >
+
+        <TextView
+            android:id="@+id/portal_slot_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+        <TextView
+            android:id="@+id/portal_slot_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+        <TextView
+            android:id="@+id/portal_slot_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+        <TextView
+            android:id="@+id/portal_slot_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/portal_detail_nav"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/portal_detail_nav"
+            android:src="@android:drawable/ic_menu_directions" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3" >
+
+        <TextView
+            android:id="@+id/portal_slot_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+        <TextView
+            android:id="@+id/portal_solt_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+        <TextView
+            android:id="@+id/portal_slot_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+        <TextView
+            android:id="@+id/portal_slot_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/resonator"
+            android:text="@string/portal_detail_slot" />
+
+    </LinearLayout>
+
+</RelativeLayout>

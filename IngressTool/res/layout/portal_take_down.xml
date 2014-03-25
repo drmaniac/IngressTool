@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/portal_take_down_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/portal_take_down_l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/portal_take_down_l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/portal_take_down_l4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/portal_take_down_l5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/portal_take_down_l6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/portal_take_down_l7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/portal_take_down_l8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_take_down_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.pieczewski.ingresstool"
+    android:versionCode="20130601"
+    android:versionName="Beta 0.2.6" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!--
+         <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    -->
+
+    <permission
+        android:name="de.pieczewski.ingresstool.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="de.pieczewski.ingresstool.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="de.pieczewski.ingresstool.IngressTool"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="de.pieczewski.ingresstool.MapActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.ingress.com"
+                    android:pathPattern="/intel"
+                    android:scheme="http" />
+            </intent-filter>
+            
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable">
+            </meta-data>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="API-KEY" /> <!-- Add A GOOGLE MAPS API KEY HERE -->
+
+        <activity
+            android:name="de.pieczewski.ingresstool.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="de.pieczewski.ingresstool.PortalDetail"
+            android:label="@string/title_activity_portal_detail"
+            android:parentActivityName="de.pieczewski.ingresstool.MapActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.pieczewski.ingresstool.MapActivity" />
+        </activity>
+        <activity
+            android:name="de.pieczewski.ingresstool.InventoryActivity"
+            android:label="@string/title_activity_inventory"
+            android:parentActivityName="de.pieczewski.ingresstool.MapActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.pieczewski.ingresstool.MapActivity" />
+        </activity>
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service
+            android:name="de.pieczewski.ingresstool.CoolDownTimerService"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="de.pieczewski.ingresstool.CoolDownTimerService" />
+            </intent-filter>
+        </service>
+        <service android:name="de.pieczewski.ingresstool.HandleCoolDownClickService" />
+
+        <receiver android:name="de.pieczewski.ingresstool.NotificationCoolDownCanceledBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="cooldown_notification_cancelled" />
+            </intent-filter>
+        </receiver>
+
+        
+        <service android:name="de.pieczewski.ingresstool.">
+        </service>
+
+        <activity
+            android:name="de.pieczewski.ingresstool.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="de.pieczewski.ingresstool.CommActivity"
+            android:label="@string/title_activity_comm" >
+        </activity>
+        
+        <provider android:name="de.pieczewski.ingresstool.MapsSearchSuggestionProvider" 
+            android:authorities="de.pieczewski.ingresstool.MapsSearchSuggestionProvider"/>
+    </application>
+
+</manifest>

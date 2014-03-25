@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:fillViewport="true" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/smenu_launch_ingress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@drawable/ic_menu_ingress"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_launch_ingress"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/smenu_intel_comm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/sym_action_chat"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_intel_comm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/smenu_map_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_mapmode"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_map_overlay"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/smenu_portal_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_more"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_portal_filter"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/smenu_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_more"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_inventory"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/smenu_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_share"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_share"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <Switch
+        android:id="@+id/smenu_tileloader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/smenu_button"
+        android:checked="true"
+        android:drawableLeft="@android:drawable/ic_popup_sync"
+        android:drawablePadding="10dp"
+        android:text="@string/smenu_tileloader"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/smenu_reload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_rotate"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_reload"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/smenu_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_manage"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_manage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/smenu_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_logout"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/smenu_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smenu_button"
+        android:drawableLeft="@android:drawable/ic_menu_info_details"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/smenu_about"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
+</ScrollView>

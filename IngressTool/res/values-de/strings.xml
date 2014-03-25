@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IngressTool</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="login_button">Anmelden</string>
+    <string name="login_status_text">Anmeldung...</string>
+    <string name="login_failed_msg">Anmeldung fehlgeschlagen...\nBitte versuchen Sie es erneut</string>
+    <string name="login_success_msg">Anmeldung erfolgreich!</string>
+    <string name="info_dlg_send_debug_msg">Sende Debug log</string>
+    <string name="portal_info_distance">Entfernung: </string>
+    <string name="update_available">update für Ingress Tool ist verfügbar!</string>
+	<string name="cool_down">starte cool down timer</string>
+    <string name="cool_down_in_progress">Portal kühlt ab</string>
+    <string name="cool_down_complete">Portal is abgekühlt!</string>
+    <string name="cool_down_time_left">Timer: %1$s sek.</string>
+    <string name="fields">Felder</string>
+    <string name="links">Links</string>
+    <string name="search_hint">Maps-Suche</string>
+    <string name="app_label">Ingress Tool</string>
+</resources>

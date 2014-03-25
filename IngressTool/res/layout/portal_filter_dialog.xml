@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level3"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level4"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level5"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level6"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level7"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLevel8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level8"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fields"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/links"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/portal_filter_dlg_select_all_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/portal_filter_dlg_show_all_button"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/portal_filter_dlg_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@android:string/cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/portal_filter_dlg_ok"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:text="@android:string/ok"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+</LinearLayout>

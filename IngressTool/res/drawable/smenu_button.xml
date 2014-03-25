@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When Pressed -->
+    <item android:drawable="@drawable/smenu_button_selector_selected" android:state_pressed="true"/>
+    <!-- When Selected -->
+    <item android:drawable="@drawable/smenu_button_selector"/>
+
+</selector>
